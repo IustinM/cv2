@@ -1,16 +1,24 @@
-.projects{
-    width: 90%;
-    margin: auto;
-    min-height: 90vh;
-    @include flex(space-between,center,row);
-    text-align: center;
-    flex-wrap: wrap;
-    h2{
-        margin: 5rem;
-        
-    }
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 90vh;
+  @include flex(space-between, center, row);
+  text-align: center;
+  flex-wrap: wrap;
+  a {
+    margin: 2rem;
+    font-size: 4rem;
+    color: $gray-text;
+  }
 }
-.travelly,.elena{
-    flex: 1 1 40rem;
-    
+.projects div {
+  flex: 1 1 40rem;
+  padding: 3rem;
+  @include flex(center, center, column);
+}
+.project-img {
+  width: 700px;
+  height: 400px;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
 }

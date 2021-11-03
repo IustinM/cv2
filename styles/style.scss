@@ -69,7 +69,9 @@ $gray-text: #2c2c2c;
     @include flex(center, center, row);
   }
   .travelly,
-  .elena {
+  .elena,
+  .todo,
+  .beatmaker {
     flex: 1 1 50rem;
     img {
       width: 100%;
@@ -83,12 +85,11 @@ $gray-text: #2c2c2c;
 }
 .about-me {
   min-height: 80vh;
-  width: 90%;
-  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  background: #154353;
+  color: white;
   flex-direction: column;
 }
 .name {
@@ -98,7 +99,8 @@ $gray-text: #2c2c2c;
 .about-me p {
   line-height: 3.5rem;
   letter-spacing: 0.2rem;
-  padding-bottom: 6rem;
+  padding: 5rem 6rem;
+  margin-bottom: 6rem;
 }
 .hero-img {
   padding: 6rem 0;
@@ -106,4 +108,22 @@ $gray-text: #2c2c2c;
   height: 400px;
   border-radius: 50%;
   object-fit: cover;
+}
+.projects-link {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects-link a {
+  padding: 2rem 4rem;
+  border: 3px solid #154353;
+  border-radius: 2rem;
+  font-size: 3rem;
+  color: #154353;
+  transition: all 0.6s ease;
+}
+.projects-link a:hover {
+  color: white;
+  background: #154353;
 }
