@@ -1,14 +1,21 @@
-footer{
-    background: $background-color;
-    color: white;
-    min-height: 20vh;
-    padding: 0% 5%;
-    @include flex(flex-start,center,row);
-    ul{
-        @include flex(space-around,center,row);
-        flex: 1 1 40rem;
-    }
-    h4{
-        flex: 1 1 40rem;
-    }
+footer {
+  background: $background-color;
+  color: white;
+  min-height: 20vh;
+  padding: 0% 5%;
+  @include flex(flex-start, center, row);
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+  }
+  h4 {
+    flex: 1 1 40rem;
+  }
+}
+.footer2 {
+  background: white;
+  color: #154353;
+  ul li a {
+    color: #154353;
+  }
 }
